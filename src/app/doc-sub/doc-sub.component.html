@@ -1,0 +1,21 @@
+<h1 class="page-title">The Classifier</h1>
+<div class="container">
+  <form enctype="multipart/form-data" (ngSubmit)="onSubmit()">
+    <div class="form-div">
+      <label for="myFile">Confidential Words:</label>
+      <input type="text" name="myKeywords" [(ngModel)]="Keywords" />
+    </div>
+    <div class="form-div">
+      <label for="myFile">Single Text File:</label>
+      <input type="file" name="myFile" accept=".txt" (change)="onFileSelected($event)"/>
+    </div>
+    <div class="form-div form-div-check">
+      <label for="myFile">Censor whole words:</label>
+      <input type="checkbox" name="myMatchAll" [(ngModel)]="MatchAll" />
+    </div>
+      <input class="btn" type="submit" value="Submit" />
+  </form>
+</div>
+<div class="document-div">
+  <p class="document-text">{{ ReturnFile }}</p>
+</div>
