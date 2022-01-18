@@ -1,6 +1,10 @@
 # ClassifierApp
 
-This project uses node.js as the back end. To run this, enter "node server" on the command line in the root of the app.
+This project uses node.js on the back end and Angular on the front end. 
+
+It requires express.js and multer libraries.
+
+To run this, enter "node server" on the command line in the root of the app.
 
 The first input takes in a comman delineated list of keywords. You do not need to put quotes around words, just the words themselves.
 
